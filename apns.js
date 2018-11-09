@@ -15,10 +15,10 @@ var apnProvider = new apn.Provider(options);
 var note = new apn.Notification();
 note.expiry = Math.floor(Date.now() / 1000) + 3600; // Expires 1 hour from now.
 note.alert = "TEST PUSH";
-note.topic = "com.rccl.NotificationsExample";
+note.topic = "irodrigo.Vimvest.iOSClient";
 
 // send the notification
-let deviceToken = "818004dce71c8d6ed8c70ff6f7992d332a34ca3dac99a8ed67c1b434799d9166"
+let deviceToken = "a4e8f439389f6e0153dc12e5c1378be8c6c1827263b94a0d45a84d900b5e3549"
 
 console.log(`push notification: ${JSON.stringify(note)}`);
 console.log(`device token: ${deviceToken}`);
